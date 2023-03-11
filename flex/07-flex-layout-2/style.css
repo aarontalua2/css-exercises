@@ -27,3 +27,46 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+
+/* My solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  min-width: 300px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  max-width: 300px;
+  padding: 0.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
